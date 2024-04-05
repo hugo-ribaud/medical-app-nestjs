@@ -5,6 +5,7 @@ import Footer from './components/Layout/Footer';
 import AppointmentList from './components/Appointments/AppointmentList';
 import AppointmentForm from './components/Appointments/AppointmentForm';
 import Home from './components/Home';
+import EditAppointment from './components/Appointments/EditAppointment';
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
             <Route
               path='/book-appointment'
               element={<AppointmentForm />}
+            />
+            <Route
+              path='/edit-appointment/:id'
+              element={<EditAppointment />}
             />
           </Routes>
         </main>
